@@ -1,0 +1,362 @@
+/*================================================================================
+	Item Name: Modern Admin - Clean Bootstrap 4 Dashboard HTML Template
+	Version: 1.0
+	Author: PIXINVENT
+	Author URL: http://www.themeforest.net/user/pixinvent
+================================================================================
+
+NOTE:
+------
+PLACE HERE YOUR OWN SCSS CODES AND IF NEEDED, OVERRIDE THE STYLES FROM THE OTHER STYLESHEETS.
+WE WILL RELEASE FUTURE UPDATES SO IN ORDER TO NOT OVERWRITE YOUR STYLES IT'S BETTER LIKE THIS.  */
+
+/*MatchToBeOne Defined Colors*/
+
+/* Works on Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: orange black;
+}
+
+/* Works on Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 13px;
+}
+
+*::-webkit-scrollbar-track {
+  background: #e8ecff;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: orange;
+  border-radius: 50px;
+  border: 3px solid gray;
+}
+
+
+.header-match
+{
+    color: #ff944d;
+    font-size: 4rem;
+    font-weight: bolder;
+}
+
+.border-cont-form-orange
+{
+	border: 1px solid white !important;
+	border-bottom: 1px solid #404040 !important;
+}
+
+
+/*.form-chats-send
+{
+	border: 1px solid #edeef0;
+}*/
+
+
+form .form-chats-send
+{
+    color: #3b4781; 
+    border: 1px solid #edeef0;
+}
+form .form-chats-send::-webkit-input-placeholder
+{
+    color: #aeb5da;
+}
+form .form-chats-send:-moz-placeholder
+{
+    /* Firefox 18- */
+    color: #aeb5da;
+}
+form .form-chats-send::-moz-placeholder
+{
+    /* Firefox 19+ */
+    color: #aeb5da;
+}
+form .form-chats-send:-ms-input-placeholder
+{
+    color: #aeb5da;
+}
+
+
+
+.btn-outline-orange
+{
+    color: #fff; 
+    border-color: #ff944d !important;
+    background-color: transparent;
+}
+
+.btn-outline-orange:hover
+{
+    color: white !important; 
+    background-color: #ff944d;
+}
+
+.sidebar-txt-hov:hover
+{
+	color: #ff944d !important; 
+}
+
+.crt-acc
+{
+    color:#ff944d;
+    font-weight:bolder ;
+}
+
+.thick-org-header
+{
+	color:#ff944d;
+    font-weight:bolder ;
+    font-size: 3.5rem;
+}
+
+.overflow-class-chat
+{
+    overflow: auto; 
+    height:600px;
+}
+
+
+
+.overflow-exp-chat
+{
+    overflow: auto; 
+    height:600px;
+}
+
+.overflow-list-chat
+{
+    overflow: auto; 
+    height:600px;
+}
+
+.footer-text-white
+{
+    color: white !important;
+}
+
+.footer-text-white:hover
+{
+    color: orange !important; 
+}
+
+
+.butt-rad
+{
+    border-radius: 4rem;
+}
+
+.img-respx {
+    max-width: 100%;
+    height: 200px;
+}
+
+.img-res-syd {
+  width: 100%;
+  height: 350px;
+}
+
+#bg-main-page {
+  height: 800px;
+  width: 100%;
+  background-image: url("../../app-assets/images/backgrounds/hero-img.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover
+}
+
+#ipad-img {
+  height: 800px;
+  width: 100%;
+  background-image: url("../../app-assets/images/backgrounds/iPad-mockup-x2.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover
+}
+
+#mask-group {
+  height: 400px;
+  width: 100%;
+  background-image: url("../../app-assets/images/backgrounds/mask-group-x2.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover
+}
+
+#about-cvr {
+  height: 500px;
+  width: 100%;
+  background-image: url("../../app-assets/images/backgrounds/group-c-9.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover
+}
+
+.fixed-crop {
+      height: 400px;
+      width: 100%;
+      max-height: 400px;
+      max-width: 100%;
+     }
+
+.pendingMsg {
+            position: absolute;
+            left: 13px;
+            top: 9px;
+            background: #b600ff;
+            margin: 0;
+            border-radius: 50%;
+            width: 18px;
+            height: 18px;
+            line-height: 18px;
+            padding-left: 5px;
+            color: #ffffff;
+            font-size: 12px;
+        }
+
+    #upload_link{
+        text-decoration:none;
+    }
+    #upload{
+        display:none
+    }
+
+    #myImg {
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#myImg:hover {opacity: 0.7;}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (Image) */
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+}
+
+/* Caption of Modal Image (Image Text) - Same Width as the Image */
+#caption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
+
+/* Add Animation - Zoom in the Modal */
+.modal-content, #caption {
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@keyframes zoom {
+  from {transform:scale(0)}
+  to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+  .modal-content {
+    width: 100%;
+  }
+}
+
+
+/*Range Input*/
+    .slidecontainer {
+      width: 100%;
+    }
+    
+    .slider {
+      -webkit-appearance: none;
+      width: 100%;
+      height: 1px;
+      border-radius: 5px;
+      background: black;
+      outline: none;
+      opacity: 0.7;
+      -webkit-transition: .2s;
+      transition: opacity .2s;
+    }
+    
+    .slider:hover {
+      opacity: 1;
+    }
+    
+    .slider::-webkit-slider-thumb {
+      -webkit-appearance: none;
+      appearance: none;
+      width: 28px;
+      height: 28px;
+      border-radius: 50%;
+      background: #ff944d;
+      cursor: pointer;
+    }
+    
+    .slider::-moz-range-thumb {
+      width: 28px;
+      height: 28px;
+      border-radius: 50%;
+      background: #ff944d;
+      cursor: pointer;
+    }
+
+    /* give Min Width to a div */
+    .give-min-ht {
+      min-height: 700px;
+    }
+
+    
+    .text-blue-p {
+      color: #006699;
+    }
+    
+    .orange-p-text {
+      color: #ff944d;
+    }
+        
+
+    /*width: 100%;
+    max-width: 100%;
+    height: auto;*/
+
