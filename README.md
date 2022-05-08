@@ -1,5 +1,5 @@
 # Match-To-Be-One
-A Social Networking Web Application with a Blog section, Friends Suggestion system and a Friendship System (Built With Laravel)
+A Social Networking Web Application with an Admin Dashboard, a Blog section, Friends Suggestion system and a Friendship System (Built With Laravel)
 
 ## Basic Functionalities
 * There is a Super Admin. The Super Admin adds Admins.(The Super admin is superior to the admin)
